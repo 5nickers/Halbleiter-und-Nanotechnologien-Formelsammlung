@@ -1,0 +1,97 @@
+\input{header.tex}
+
+
+\begin{document}
+
+\maketitle
+
+Dieser Text ist unter dieser \href{http://creativecommons.org/licenses/by-nc-sa/4.0/}{Creative Commons} Lizenz veröffentlicht.
+
+\textcolor{red}{Ich erhebe keinen Anspruch auf Vollständigkeit oder Richtigkeit. Falls ihr Fehler findet oder etwas fehlt, dann meldet euch bitte über den Emailkontakt.}
+
+\tableofcontents
+
+
+\newpage
+
+
+Ich habe keine Formeln aus vorigen Übungen inkludiert, da diese recht gut im Skript zusammengefasst sind.
+
+
+
+\section{Aus Übung 5}
+
+\begin{align*}
+\intertext{Zustandsdichten im k-Raum:} 
+D(k)\d k &= \frac{\pi k^2}{\pi^3} \d k 
+\intertext{Zustandsdichte im Energieraum:}
+D(E) \d E &= \frac{4 \pi \cdot \left( 2m \right)^{3/2)} \cdot \sqrt{E}}{h^3}
+\intertext{Dichte der Zustände:}
+n &= \int D(E) \d E
+\intertext{Wahrscheinlichkeit eines besetzten Elektronenzustandes}
+f_h(E) &= \frac{1}{1 + e^{\frac{E - E_F}{kT}}}
+\end{align*}
+
+
+
+\section{Aus Übung 6}
+
+\begin{align*}
+\intertext{Zustandsdichte}
+D(E) &= \frac{\d N}{\d E} = \frac{1}{2 \pi^2} \cdot \left( \frac{2m}{\hbar^2} \right)^{\frac{3}{2}} \cdot \sqrt{E} \cdot V
+\intertext{Elektronendichte}
+n &= \frac{N}{V}
+\intertext{Fermienergie}
+E_F &= \left( 3 \pi^2 \right)^{\frac{2}{3}} \cdot \frac{\hbar^2}{2m} \cdot n^{\frac{2}{3}} = \frac{E_C - E_V}{2} + \frac{3kT}{4} \cdot \ln\left( \frac{m_h*}{m_e*} \right)
+\intertext{Fermitemperatur}
+T_F &= \frac{E_F}{k}
+\intertext{Innere Energie von Fermigas}
+U &= \frac{3}{5} \cdot N \cdot E_F
+\intertext{Teilchendruck}
+P &= \frac{\p U}{\p V} = \frac{2}{5} \cdot n \cdot E_F
+\intertext{Zustanddichte der Elektronen}
+N_C &= 2 \cdot \left( \frac{kT}{2 \pi \hbar} \right)^{3/2} \cdot m*_e^{3/2}
+\intertext{Zustanddichte der Löcher}
+N_V &= 2 \cdot \left( \frac{kT}{2 \pi \hbar} \right)^{3/2} \cdot m*_h^{3/2}
+\end{align*}
+
+
+\section{Aus Übung 7}
+
+
+\begin{align*}
+\intertext{Besetzungsdichte bei einem dotierten Halbleiter}
+n_d &= N_d \cdot \frac{1}{1 + \half e^{\frac{E - E_F}{kT}}}
+\intertext{Zustandsdichte $N_c$}
+N_c &= 2 \cdot \left( \frac{2 \pi \cdot m^* \cdot kT}{h^2} \right)^\frac{3}{2}
+\intertext{die Elektronenkonzentration dazu ist dann}
+n &= N_c \cdot e^{- \frac{E_c - E_F}{kT}}
+\intertext{Raumladungsweite bei einem Schottky-Kontakt}
+w &= \sqrt{\frac{2 \cdot \epsilon_r \cdot \epsilon_0 \cdot \left( V_{bi} + V_R \right)}{e \cdot N_d}} \qquad \text{Dabei ist  $V_R$ die Gatespannung mit - am Gate}
+\intertext{Die Kapazität}
+C' &= \frac{C}{A} = \frac{\epsilon_0 \epsilon_r}{w} = \sqrt{\frac{e \cdot N_d \cdot \epsilon_0 \epsilon_r}{\left( V_{bi} + V_R \right)^2}}
+\end{align*}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
